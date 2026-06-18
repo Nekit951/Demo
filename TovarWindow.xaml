@@ -1,0 +1,22 @@
+﻿<Window x:Class="WpfApp3.TovarWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp3"
+        mc:Ignorable="d"
+        Title="TovarWindow" Height="450" Width="800">
+    <Grid>
+        <DataGrid x:Name="dataGrid" d:ItemsSource="{d:SampleData ItemCount=5}"/>
+        <Button x:Name="AddTovar" Content="Добавить" HorizontalAlignment="Left" Margin="474,335,0,0" VerticalAlignment="Top" Click="AddTovar_Click"/>
+        <Button x:Name="DelTovar" Content="Удалить" HorizontalAlignment="Left" Margin="552,335,0,0" VerticalAlignment="Top" Click="DelTovar_Click"/>
+        <TextBox x:Name="InputName" HorizontalAlignment="Left" Margin="124,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="120"/>
+        <TextBox x:Name="InputCategory" HorizontalAlignment="Left" Margin="334,203,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="InputPrice" HorizontalAlignment="Left" Margin="334,254,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="InputQuantity" HorizontalAlignment="Left" Margin="124,254,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="Name" Content="Название" HorizontalAlignment="Left" Margin="38,0,0,0" VerticalAlignment="Center" RenderTransformOrigin="1.133,0.563"/>
+        <Label x:Name="Category" Content="Категория" HorizontalAlignment="Left" Margin="263,199,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="Price" Content="Цена" HorizontalAlignment="Left" Margin="62,250,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="Quantity" Content="Количество" HorizontalAlignment="Left" Margin="255,246,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Window>

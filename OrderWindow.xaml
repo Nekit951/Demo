@@ -1,0 +1,24 @@
+﻿<Window x:Class="WpfApp3.OrderWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp3"
+        mc:Ignorable="d"
+        Title="OrderWindow" Height="450" Width="800">
+    <Grid>
+        <DataGrid x:Name="dataGrid" d:ItemsSource="{d:SampleData ItemCount=5}"/>
+        <Button x:Name="AddOrder" Content="Добавить" HorizontalAlignment="Left" Margin="474,335,0,0" VerticalAlignment="Top" Click="AddOrder_Click"/>
+        <Button x:Name="DelOrder" Content="Удалить" HorizontalAlignment="Left" Margin="552,335,0,0" VerticalAlignment="Top" Click="DelOrder_Click"/>
+        <TextBox x:Name="InputTovar" HorizontalAlignment="Left" Margin="124,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="120"/>
+        <TextBox x:Name="InputQuantity" HorizontalAlignment="Left" Margin="342,207,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="InputUser" HorizontalAlignment="Left" Margin="346,250,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="InputSumma" HorizontalAlignment="Left" Margin="124,259,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="InputAddress" HorizontalAlignment="Left" Margin="552,221,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="Tovar" Content="Товар" HorizontalAlignment="Left" Margin="38,0,0,0" VerticalAlignment="Center" RenderTransformOrigin="1.133,0.563"/>
+        <Label x:Name="Quantity" Content="Количество" HorizontalAlignment="Left" Margin="263,199,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="Summa" Content="Сумма" HorizontalAlignment="Left" Margin="62,250,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="User" Content="Пользователь" HorizontalAlignment="Left" Margin="255,246,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="Address" Content="Адрес" HorizontalAlignment="Left" Margin="502,217,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Window>
